@@ -56,6 +56,11 @@ overflow: hidden;
     margin-left: 25px;
     color: white;
     text-align: start;
+    opacity: 0;
+    animation: fade 0.5s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
+
   }
   h1{
        margin-left: 25px;
@@ -87,7 +92,14 @@ overflow: hidden;
 .home{
     color: white;
 }
-
+@keyframes fade {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
 @media screen and (max-width: 1000px) {
    input{
         margin: auto;

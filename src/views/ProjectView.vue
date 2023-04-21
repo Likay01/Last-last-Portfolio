@@ -76,7 +76,7 @@
   </script>
   <style scoped>
         .heart{
-      height:200vh;
+      height:auto;
       background-color: #100f0f;
       font-family: 'Montserrat';
       font-style: normal;
@@ -99,7 +99,7 @@
       background-color: #C0BB05;
       transition: transform 2s;
       object-fit: contain;
-  margin: auto;
+  margin: 5px;
   padding: 0;
     }
     h1{
@@ -132,11 +132,16 @@
   }
   .band{
       background-color:#FFF804; 
-      height: 200vh;
+      height: auto;
       width: 100vw;
+      opacity: 0;
+      animation: fade 0.5s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
   }
   .banding{
-    height: 200vh;
+    height: auto;
+    margin: 15px;
   }
   .vinyl{
     background-image: url(https://i.postimg.cc/CxpRLM7q/Vinylique-1.png);
@@ -177,6 +182,14 @@
     background-size: cover;
   
   }
+  @keyframes fade {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
   @media screen and (max-width: 1000px) {
     .card{
       margin-bottom: 30px;

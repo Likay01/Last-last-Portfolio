@@ -2,7 +2,7 @@
     <div class="main">
         <nav class="navbar navbar-light">
   <div class="container p-0">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="https://i.postimg.cc/sg3wGdBx/LINDOKUHLE-MGOQI-logo-2-1.png" alt="" width="90" height="35">
     </a>
   </div>

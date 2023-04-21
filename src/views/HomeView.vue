@@ -55,8 +55,13 @@ body{
     display: grid;
     margin: 5px;
     gap: 5px;
+    opacity: 0;
+    animation: fade 0.5s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
   }
   .reg-1{
+    width: 98.5vw;
 background: #268D8F;
 border: 5px solid #0C2B2C;
 border-radius: 15px;
@@ -79,21 +84,42 @@ background-size: cover;
 border: 5px solid #943707;
 border-radius: 15px;
 width: 32vw;
+opacity: 0;
+    animation: fade 0.5s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+  }
+  .resume:hover{
+    transform: translateZ(3rem);
   }
   .projects{
     background: url(https://i.postimg.cc/VLgg964x/My-project-1-6.png);
 background-size: cover;
 border-radius: 15px;
 border: 5px solid #C0BB05;
-
 width: 32vw;
+opacity: 0;
+    animation: fade 0.5s;
+animation-delay: 1.5s;
+animation-fill-mode: forwards;
+  }
+  .projects:hover{
+    transform: translateZ(3rem);
+
   }
   .testimonial{
     background: url(https://i.postimg.cc/kG0mfsn5/My-project-1-7.png);
 background-size: cover;border-radius: 15px;
 border: 5px solid #24722D;
+width: 33vw;
+opacity: 0;
+    animation: fade 0.5s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+  }
+  .testimonial:hover{
+    transform: translateZ(3rem);
 
-width: 34vw;
   }
   .board{
     text-align: start;
@@ -153,6 +179,55 @@ font-weight: 200;
   a{
     text-decoration: none;
   }
+  @keyframes scroll {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(calc(-250px * 9));
+    }
+  }
+  @keyframes fade {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
+@media screen and (max-width: 1440px) {
+.in{
+  height: 50vh;
+}
+img{
+  height: 40vh;
+  width: 10vw;
+}
+.box{
+  margin-left: 130px;
+  width: 200px;
+  height: 8vh;
+}
+h6{
+  font-size: 12px;
+  margin-top: 3px;
+}
+.intro{
+  font-size: 25px;
+}
+.name{
+  font-size: 50px;
+}
+.board{
+  width: 50vw;
+  margin: auto;
+}
+}
+@media screen and (max-width: 1024px) {
+  img{
+    width: 15vw;
+  }
+}
   @media screen and (max-width: 1000px) {
     .pro{
       display: none;
@@ -192,5 +267,49 @@ font-weight: 200;
     .testimonial{
       width: 97vw;
     }
+  }
+  @media screen and (max-width: 768px) {
+    .in{
+margin: auto;
+    }
+    .name{
+      font-size: 37px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .intro{
+      font-size: 12px;
+    }
+    .name{
+      font-size: 27px;
+      text-align: center;
+    } 
+    .box{
+  margin-left: px;
+  width: 150px;
+  height: 5vh;
+}
+h6{
+  font-size: 10px;
+  margin-top: 1px;
+}
+  }
+  @media screen and (max-width: 320px) {
+    .intro{
+      font-size: 12px;
+    }
+    .name{
+      font-size: 27px;
+      text-align: center;
+    } 
+    .box{
+  margin-left: px;
+  width: 150px;
+  height: 5vh;
+}
+h6{
+  font-size: 10px;
+  margin-top: 1px;
+}
   }
 </style>

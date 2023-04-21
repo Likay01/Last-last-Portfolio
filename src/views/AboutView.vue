@@ -35,6 +35,10 @@ margin-left: 25px;
 background: #EF5B0E;
 border: 5px solid #943707;
 border-radius: 15px;
+opacity: 0;
+animation: fade 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
   }
   h5{
     text-align: start;
@@ -73,29 +77,32 @@ color: rgba(148, 54, 7, 0.479);
   .text{
     word-wrap: break-word;
   }
-  @media screen and (max-width: 335px){
- 
-    .reg-1{
-height: 200vh;
+  @keyframes fade {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
+
+  @media screen and (max-width: 1440px){
+    .heart{
+      height:100vh;
     }
     h5{
-      margin: 0px;
-    }
-  }
-  @media screen and (max-width: 1000px){
-    .heart{
-      height: 105vh;
-    }
+  margin-top: 40px;
+  font-size: 34px;
+}
     p{
       display: none;
     }
     .text{
-      margin-top: 35px;
-      margin: 10px;
+      margin: 40px;
     }
     .reg-1{
-height: 100vh;
-margin: 10px;
+height:90vh;
+margin: 30px;
     }
 img{
   display: none;
@@ -110,8 +117,54 @@ p{
 h5{
     text-align: start;
   margin:0;
-    font-size: 28px;
     color: #552005;
   }
   }
+  @media screen and (max-width: 1024px){
+.heart{
+  height: 100vh;
+}
+.reg-1{
+  height: 90vh;
+}
+h5{
+  margin-top: 40px;
+  font-size: 30px;
+}
+  }
+  @media screen and (max-width: 768px){
+.heart{
+  height: 100vh;
+}
+.reg-1{
+  height: 90vh;
+}
+h5{
+  font-size: 28px;
+}
+  }
+  @media screen and (max-width: 425px){
+.heart{
+  height:145vh;
+}
+.reg-1{
+height: 140vh;
+} 
+ }
+ @media screen and (max-width: 375px){
+ .reg-1{
+  height: 80vh;
+ }
+ .heart{
+  height: 200vh;
+ }
+ }
+ @media screen and (max-width: 320px){
+ .reg-1{
+  height: 180vh;
+ }
+ .heart{
+  height: 185vh;
+ }
+ }
 </style>

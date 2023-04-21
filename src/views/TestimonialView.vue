@@ -28,7 +28,7 @@
           <img src="https://i.postimg.cc/Kz8bHftL/Sakhe.jpg" class="images card-img-top" alt="...">
     <div class="card-bodyspace">
       <h5 class="card-title">Sakhe Mzolisa</h5>
-      <p class="card-text">Lindo is a charismatic and bubbly person, innovative would be the word to describe him as he is tree with filled with fresh ideas. A great person to work with, always willing to assist. He standouts amongst a crowd.</p>
+      <p class="card-text">Lindo is a charismatic and bubbly person, innovative would be the word to describe him as he is tree filled with fresh ideas. A great person to work with, always willing to assist. He standouts amongst a crowd.</p>
           </div>
             </div>
               </div>
@@ -90,7 +90,7 @@
     }
     .card{
       width: 0;
-      height: 30rem;
+      height: auto;
       background-color: #25742e94;
       transition: transform 2s;
       object-fit: contain;
@@ -124,10 +124,23 @@
   .band{
       background-color:#3CCF4E; 
       height: 90vh;
+      opacity: 0;
+      animation: fade 0.5s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
+
   }
   .banding:hover{
     animation-play-state: paused;
   }
+  @keyframes fade {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
   @keyframes scroll {
     0%{
       transform: translateX(0);
@@ -136,9 +149,9 @@
       transform: translateX(calc(-250px * 9));
     }
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1440px) {
     .banding{
-        margin-top: 2.5%;
+      margin-top: 0;
     }
 .card-bodyspace{
     font-size: 12px;
@@ -146,8 +159,8 @@
     font-weight: 400;
 }
  .card{
-    height: 33rem;
-    widows: 7rem;
+    height: 30rem;
+    width: 23rem;
  }
   }
   </style>

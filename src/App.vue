@@ -28,10 +28,22 @@ font-family: 'Montserrat', sans-serif;font-style: normal;
 text-align: center;
 font-weight: 400;
 }
+::-webkit-scrollbar{
+  width: 15px;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track{
+  background-color: #100f0f;
+  opacity: 30%;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#423b3b;
+  border-radius: 15px;
+}
 body{
   min-height: 100vh; 
   overflow-x: hidden;
-  background-color:#100f0f ;
+  background-color:#100f0f;
   width: 100%;
 }
 nav {
@@ -44,7 +56,7 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #f1f1f1;
+  color: #423b3b;
 }
 footer{
   background-color: #f1f1f1;
