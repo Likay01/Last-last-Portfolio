@@ -22,7 +22,7 @@
     <div class="content">
       <h2>2022</h2>
       <h6 class="card-Subtitle text-dark">Life Choices Academy</h6>
-      <p>Aspiring to become a Wed developer</p>
+      <p>Aspiring to become a Web developer</p>
     </div>
   </div>
     <div class="container right">
